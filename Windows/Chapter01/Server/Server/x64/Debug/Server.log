@@ -1,0 +1,16 @@
+﻿  Server.cpp
+C:\Users\pc\OneDrive\문서\Networkgaming\Ex\TCP-IP-Socket-Prog-Book-2nd\Windows\Common.h(15,6): error C2084: 'void err_quit(const char *)' 함수에 이미 본문이 있습니다.
+  (소스 파일 'Server.cpp'을(를) 컴파일하는 중)
+  C:\Users\pc\OneDrive\문서\Networkgaming\Ex\TCP-IP-Socket-Prog-Book-2nd\Windows\Chapter01\Server\Server.cpp(17,6):
+  'err_quit'의 이전 정의를 참조하십시오.
+  
+C:\Users\pc\OneDrive\문서\Networkgaming\Ex\TCP-IP-Socket-Prog-Book-2nd\Windows\Common.h(29,6): error C2084: 'void err_display(const char *)' 함수에 이미 본문이 있습니다.
+  (소스 파일 'Server.cpp'을(를) 컴파일하는 중)
+  C:\Users\pc\OneDrive\문서\Networkgaming\Ex\TCP-IP-Socket-Prog-Book-2nd\Windows\Chapter01\Server\Server.cpp(31,6):
+  'err_display'의 이전 정의를 참조하십시오.
+  
+C:\Users\pc\OneDrive\문서\Networkgaming\Ex\TCP-IP-Socket-Prog-Book-2nd\Windows\Common.h(42,6): error C2084: 'void err_display(int)' 함수에 이미 본문이 있습니다.
+  (소스 파일 'Server.cpp'을(를) 컴파일하는 중)
+  C:\Users\pc\OneDrive\문서\Networkgaming\Ex\TCP-IP-Socket-Prog-Book-2nd\Windows\Chapter01\Server\Server.cpp(44,6):
+  'err_display'의 이전 정의를 참조하십시오.
+  

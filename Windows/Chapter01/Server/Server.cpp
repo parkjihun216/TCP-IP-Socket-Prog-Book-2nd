@@ -201,20 +201,26 @@ DWORD WINAPI TCPServer6(LPVOID arg)
 	return 0;
 }
 
-int main(int argc, char *argv[])
+#include "..\..\Common.h"
+
+int main(int argc, char* argv[])
 {
 	// 윈속 초기화
 	WSADATA wsa;
 	if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0)
 		return 1;
+	printf("[알림] 윈속 초기화 성공\n");
 
-	// 멀티스레드를 이용하여 두 개의 서버를 동시에 구동한다.
-	HANDLE hThread[2];
-	hThread[0] = CreateThread(NULL, 0, TCPServer4, NULL, 0, NULL);
-	hThread[1] = CreateThread(NULL, 0, TCPServer6, NULL, 0, NULL);
-	WaitForMultipleObjects(2, hThread, TRUE, INFINITE);
+	// 소켓 생성
+	SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);
+	if (sock == INVALID_SOCKET) err_quit("socket()");
+	printf("[알림] 소켓 생성 성공\n");
+
+	// 소켓 닫기
+	closesocket(sock);
 
 	// 윈속 종료
 	WSACleanup();
 	return 0;
 }
+

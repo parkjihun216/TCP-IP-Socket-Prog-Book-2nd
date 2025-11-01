@@ -1,6 +1,6 @@
 #include "..\..\Common.h"
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
 	// 윈속 초기화
 	WSADATA wsa;
